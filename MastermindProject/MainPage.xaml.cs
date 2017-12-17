@@ -25,6 +25,7 @@ namespace MastermindProject
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        int turn = 0;
         public MainPage()
         {
             this.InitializeComponent();
