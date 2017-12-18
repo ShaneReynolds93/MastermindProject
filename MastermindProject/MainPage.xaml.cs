@@ -25,11 +25,181 @@ namespace MastermindProject
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        // ellip1 = Where the user places their pegs = turnChoice
+        // ellip2 = Feedback on the users guesses
+        // ellip3 = Where the user chooses their pegs = colorChoice
+        // ellip4 = The combination answer
+
         int turn = 0;
         public MainPage()
         {
             this.InitializeComponent();
 
+            PlaneProjection pp = new PlaneProjection(); // this is for tilting the gameBoard back for realism/perspective
+            pp.RotationX = -0;
+
+            // START OF STACKPANEL AND ELLIPSES FOR THE COLOR CHOICES
+            StackPanel gameBoard = new StackPanel();
+            gameBoard.Width = 500;
+            gameBoard.HorizontalAlignment = HorizontalAlignment.Center;
+            gameBoard.Orientation = Orientation.Horizontal;
+
+            StackPanel userInput = new StackPanel();
+            userInput.Name = "userInputPanel";
+
+            List<SolidColorBrush> colorList = new List<SolidColorBrush>();
+            colorList.Add(new SolidColorBrush(Colors.Red));
+            colorList.Add(new SolidColorBrush(Colors.Orange));
+            colorList.Add(new SolidColorBrush(Colors.Yellow));
+            colorList.Add(new SolidColorBrush(Colors.Green));
+            colorList.Add(new SolidColorBrush(Colors.Blue));
+            colorList.Add(new SolidColorBrush(Colors.Violet));
+            colorList.Add(new SolidColorBrush(Colors.PaleVioletRed)); //remove this color
+
+            foreach (var c in colorList)
+            {
+                Ellipse colorChoice;
+                colorChoice = new Ellipse();
+                colorChoice.Fill = c;
+                colorChoice.Height = 50;
+                colorChoice.Width = 50;
+                colorChoice.Tapped += colorChoice_Tapped;
+
+                Debug.WriteLine("here" + colorChoice.Name);
+                userInput.Children.Add(colorChoice);
+            }
+
+            userInput.Visibility = Visibility.Collapsed;
+
+            StackPanel vertical = new StackPanel();
+            gameBoard.Children.Add(userInput);
+            gameBoard.Children.Add(vertical);
+
+            StackPanel solution = new StackPanel();
+            solution.Name = "RevealSolution";
+            solution.Orientation = Orientation.Horizontal;
+            solution.Visibility = Visibility.Collapsed;
+            Random random = new Random();
+
+            for (int s = 0; s < 4; s++)
+            {
+                Ellipse boardSolution;
+                boardSolution = new Ellipse();
+
+                boardSolution.Fill = colorList[random.Next(0, 7)];
+                boardSolution.Height = 50;
+                boardSolution.Width = 50;
+                solution.Children.Add(boardSolution);
+                boardSolution.Name = "Solution" + s;
+            }
+  
+            vertical.Children.Add(solution);
+            vertical.Projection = pp;
+            // END OF STACKPANEL AND ELLIPSES FOR THE COLOR CHOICES
+
+
+            // START OF STACKPANEL AND ELLIPSES FOR THE USERS TURNS
+            for (int t = 9; t >= 0; t--) // the amount of turns that the user has to guess
+            {
+                StackPanel turnPanel = new StackPanel();
+                turnPanel.Orientation = Orientation.Horizontal;
+                turnPanel.VerticalAlignment = VerticalAlignment.Center;
+                turnPanel.HorizontalAlignment = HorizontalAlignment.Center;
+                turnPanel.Background = new SolidColorBrush(Colors.Beige);
+
+                StackPanel panelEllipse = new StackPanel();
+                panelEllipse.Orientation = Orientation.Horizontal;
+
+                Grid resultsGrid = new Grid();
+
+                for (int i = 0; i < 4; i++) // the pegs that the user is choosing for the turn
+                {
+                    Ellipse turnChoice = new Ellipse();
+                    turnChoice.Fill = new SolidColorBrush(Colors.White);
+                    turnChoice.Stroke = new SolidColorBrush(Colors.Black);
+                    turnChoice.Height = 50;
+                    turnChoice.Width = 50;
+                    turnChoice.Margin = new Thickness(2);
+                    panelEllipse.Children.Add(turnChoice);
+                    turnChoice.Name = "turn" + t + "_Peg" + i; // to check turn and peg placements
+                    turnChoice.Tapped += TurnChoice_Tapped;
+                }
+                gameBoard.Children.Add(panelEllipse);
+
+                for (int i = 0; i < 2; i++)
+                {
+                    resultsGrid.ColumnDefinitions.Add(new ColumnDefinition());
+                    resultsGrid.RowDefinitions.Add(new RowDefinition());
+                }
+                // END OF PANELS AND ELLIPSES FOR THE USERS TURNS
+
+
+                // START OF PANELS AND ELLIPSES FOR TURN FEEDBACK 
+                int counter = 0;              
+                for (int row = 0; row < 2; row++)
+                {
+                    for (int column = 0; column < 2; column++)
+                    {
+                        Ellipse turnFeedback = new Ellipse()
+                        {
+                        };
+
+                        turnFeedback.Fill = new SolidColorBrush(Colors.Gray);
+                        turnFeedback.Height = 25;
+                        turnFeedback.Width = 25;
+                        turnFeedback.Margin = new Thickness(2);
+                        turnFeedback.SetValue(Grid.RowProperty, row);
+                        turnFeedback.SetValue(Grid.ColumnProperty, column);
+                        resultsGrid.Children.Add(turnFeedback);
+                        turnFeedback.Name = "result" + t + "_" + counter++;
+                    }
+                }
+                // END OF TURN FEEDBACK PANELS AND ELLIPSES
+
+                turnPanel.Children.Add(resultsGrid);
+                vertical.Children.Add(turnPanel);
+            }
+
+            // Creates a button that allows the user to finalize their guess for the turn
+            board.Children.Add(gameBoard);
+            Button button = new Button();
+            button.Content = "Next Turn";
+            board.Children.Add(button);
         }
+
+        private void Button_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+           
+        }
+
+
+        private void colorChoice_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Ellipse toChange = (Ellipse)FindName(senderToChange);
+            Ellipse ori = (Ellipse)sender;
+
+            toChange.Fill = ori.Fill;
+            StackPanel inputPanel = (StackPanel)FindName("inputPanel");
+            inputPanel.Visibility = Visibility.Collapsed;
+        }
+
+
+        String senderToChange = "";
+        private void TurnChoice_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Ellipse clicked = (Ellipse)sender;
+            Debug.WriteLine(clicked.Name);
+            int row, col;
+            row = Convert.ToInt32(clicked.Name.Substring(4, 1));
+            col = Convert.ToInt32(clicked.Name.Substring(6, 1));
+            if (row == turn)
+            {
+                senderToChange = clicked.Name;
+                StackPanel inputPanel = (StackPanel)FindName("inputPanel");
+                inputPanel.Visibility = Visibility.Visible;
+            }
+            // Ellipse elli = FindName("turn" + row + "_" + col) as Ellipse;
+        }
+
     }
 }

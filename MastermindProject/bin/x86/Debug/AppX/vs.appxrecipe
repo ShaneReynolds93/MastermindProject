@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>0d68389d-3371-4964-a61d-603f15c17210</PackageIdentityName>
     <PackageIdentityPublisher>CN=shayn</PackageIdentityPublisher>
-    <IntermediateOutputPath>c:\users\shayn\documents\visual studio 2015\Projects\MastermindProject\MastermindProject\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -25,16 +25,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="c:\users\shayn\documents\visual studio 2015\Projects\MastermindProject\MastermindProject\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-17T00:48:27.741</Modified>
+      <Modified>2017-12-18T21:14:05.922</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="c:\users\shayn\documents\visual studio 2015\Projects\MastermindProject\MastermindProject\bin\x86\Debug\MastermindProject.exe">
+    <AppxPackagedFile Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\bin\x86\Debug\MastermindProject.exe">
       <PackagePath>entrypoint\MastermindProject.exe</PackagePath>
-      <Modified>2017-12-17T00:48:24.092</Modified>
+      <Modified>2017-12-18T21:14:04.926</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shayn\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -448,45 +448,45 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-22T22:11:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\shayn\documents\visual studio 2015\Projects\MastermindProject\MastermindProject\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2017-12-17T00:32:59.416</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\shayn\documents\visual studio 2015\Projects\MastermindProject\MastermindProject\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\shayn\documents\visual studio 2015\Projects\MastermindProject\MastermindProject\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\shayn\documents\visual studio 2015\Projects\MastermindProject\MastermindProject\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\shayn\documents\visual studio 2015\Projects\MastermindProject\MastermindProject\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\shayn\documents\visual studio 2015\Projects\MastermindProject\MastermindProject\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\shayn\documents\visual studio 2015\Projects\MastermindProject\MastermindProject\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\shayn\documents\visual studio 2015\Projects\MastermindProject\MastermindProject\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\shayn\documents\visual studio 2015\Projects\MastermindProject\MastermindProject\bin\x86\Debug\MastermindProject.xr.xml">
+    <AppxPackagedFile Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\bin\x86\Debug\MastermindProject.xr.xml">
       <PackagePath>MastermindProject.xr.xml</PackagePath>
       <Modified>2017-12-17T00:48:23.678</Modified>
     </AppxPackagedFile>
@@ -494,14 +494,14 @@
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-11-04T15:50:49.189</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\shayn\documents\visual studio 2015\Projects\MastermindProject\MastermindProject\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-17T00:48:26.902</Modified>
+      <Modified>2017-12-18T21:06:47.661</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\shayn\documents\visual studio 2015\Projects\MastermindProject\MastermindProject\bin\x86\Debug\Core\MastermindProject.exe">
+    <AppxPackagedFile Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\bin\x86\Debug\Core\MastermindProject.exe">
       <PackagePath>MastermindProject.exe</PackagePath>
-      <Modified>2017-12-17T00:48:27.720</Modified>
+      <Modified>2017-12-18T21:14:05.884</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

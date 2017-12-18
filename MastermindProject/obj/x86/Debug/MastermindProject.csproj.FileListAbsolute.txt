@@ -189,3 +189,4 @@ c:\users\shayn\documents\visual studio 2015\Projects\MastermindProject\Mastermin
 c:\users\shayn\documents\visual studio 2015\Projects\MastermindProject\MastermindProject\obj\x86\Debug\qualifiers.txt.intermediate
 c:\users\shayn\documents\visual studio 2015\Projects\MastermindProject\MastermindProject\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 c:\users\shayn\documents\visual studio 2015\Projects\MastermindProject\MastermindProject\obj\x86\Debug\ProjectArchitectures.txt
+c:\users\shayn\documents\visual studio 2015\Projects\MastermindProject\MastermindProject\obj\x86\Debug\MastermindProject.csprojResolveAssemblyReference.cache
