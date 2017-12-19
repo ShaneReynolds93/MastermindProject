@@ -1,0 +1,1 @@
+C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\MastermindProject.csproj;x86
