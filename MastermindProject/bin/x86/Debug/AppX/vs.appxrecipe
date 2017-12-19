@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-18T21:14:05.922</Modified>
+      <Modified>2017-12-19T00:47:11.295</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\bin\x86\Debug\MastermindProject.exe">
       <PackagePath>entrypoint\MastermindProject.exe</PackagePath>
-      <Modified>2017-12-18T21:14:04.926</Modified>
+      <Modified>2017-12-19T00:47:07.474</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shayn\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -501,7 +501,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\bin\x86\Debug\Core\MastermindProject.exe">
       <PackagePath>MastermindProject.exe</PackagePath>
-      <Modified>2017-12-18T21:14:05.884</Modified>
+      <Modified>2017-12-19T00:47:11.242</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

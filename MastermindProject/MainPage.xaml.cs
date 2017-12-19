@@ -25,11 +25,6 @@ namespace MastermindProject
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        // ellip1 = Where the user places their pegs = turnChoice
-        // ellip2 = Feedback on the users guesses
-        // ellip3 = Where the user chooses their pegs = colorChoice
-        // ellip4 = The combination answer
-
         int turn = 0;
         public MainPage()
         {
@@ -38,7 +33,6 @@ namespace MastermindProject
             PlaneProjection pp = new PlaneProjection(); // this is for tilting the gameBoard back for realism/perspective
             pp.RotationX = -0;
 
-            // START OF STACKPANEL AND ELLIPSES FOR THE COLOR CHOICES
             StackPanel gameBoard = new StackPanel();
             gameBoard.Width = 500;
             gameBoard.HorizontalAlignment = HorizontalAlignment.Center;
@@ -47,6 +41,7 @@ namespace MastermindProject
             StackPanel userInput = new StackPanel();
             userInput.Name = "userInputPanel";
 
+            // setting the colors of the ellipses/pegs that will be made available in the game
             List<SolidColorBrush> colorList = new List<SolidColorBrush>();
             colorList.Add(new SolidColorBrush(Colors.Red));
             colorList.Add(new SolidColorBrush(Colors.Orange));
@@ -54,8 +49,9 @@ namespace MastermindProject
             colorList.Add(new SolidColorBrush(Colors.Green));
             colorList.Add(new SolidColorBrush(Colors.Blue));
             colorList.Add(new SolidColorBrush(Colors.Violet));
-            colorList.Add(new SolidColorBrush(Colors.PaleVioletRed)); //remove this color
+            colorList.Add(new SolidColorBrush(Colors.PaleVioletRed));
 
+            // this will allow the user to choose their desired peg/ellipse colour for a turn from the list defined above
             foreach (var c in colorList)
             {
                 Ellipse colorChoice;
@@ -75,6 +71,8 @@ namespace MastermindProject
             gameBoard.Children.Add(userInput);
             gameBoard.Children.Add(vertical);
 
+
+            // START OF STACKPANEL AND ELLIPSES FOR THE GAME SOLUTION/PEG ANSWER
             StackPanel solution = new StackPanel();
             solution.Name = "RevealSolution";
             solution.Orientation = Orientation.Horizontal;
@@ -92,10 +90,11 @@ namespace MastermindProject
                 solution.Children.Add(boardSolution);
                 boardSolution.Name = "Solution" + s;
             }
-  
+
             vertical.Children.Add(solution);
             vertical.Projection = pp;
-            // END OF STACKPANEL AND ELLIPSES FOR THE COLOR CHOICES
+
+            // END OF STACKPANEL AND ELLIPSES FOR THE GAME SOLUTION
 
 
             // START OF STACKPANEL AND ELLIPSES FOR THE USERS TURNS
@@ -119,23 +118,23 @@ namespace MastermindProject
                     turnChoice.Stroke = new SolidColorBrush(Colors.Black);
                     turnChoice.Height = 50;
                     turnChoice.Width = 50;
-                    turnChoice.Margin = new Thickness(2);
+                    turnChoice.Margin = new Thickness(5);
                     panelEllipse.Children.Add(turnChoice);
                     turnChoice.Name = "turn" + t + "_Peg" + i; // to check turn and peg placements
                     turnChoice.Tapped += TurnChoice_Tapped;
                 }
-                gameBoard.Children.Add(panelEllipse);
+                turnPanel.Children.Add(panelEllipse);
+                // END OF PANELS AND ELLIPSES FOR THE USERS TURNS
 
+
+                // START OF PANELS AND ELLIPSES FOR TURN FEEDBACK 
                 for (int i = 0; i < 2; i++)
                 {
                     resultsGrid.ColumnDefinitions.Add(new ColumnDefinition());
                     resultsGrid.RowDefinitions.Add(new RowDefinition());
                 }
-                // END OF PANELS AND ELLIPSES FOR THE USERS TURNS
 
-
-                // START OF PANELS AND ELLIPSES FOR TURN FEEDBACK 
-                int counter = 0;              
+                int counter = 0;
                 for (int row = 0; row < 2; row++)
                 {
                     for (int column = 0; column < 2; column++)
@@ -154,13 +153,13 @@ namespace MastermindProject
                         turnFeedback.Name = "result" + t + "_" + counter++;
                     }
                 }
-                // END OF TURN FEEDBACK PANELS AND ELLIPSES
+                // END OF PANELS AND ELLIPSES FOR TURN FEEDBACK
 
                 turnPanel.Children.Add(resultsGrid);
                 vertical.Children.Add(turnPanel);
             }
 
-            // Creates a button that allows the user to finalize their guess for the turn
+            // Creates a button that allows the user to finalize their guess for the current turn and moves them onto the next
             board.Children.Add(gameBoard);
             Button button = new Button();
             button.Content = "Next Turn";
@@ -169,7 +168,24 @@ namespace MastermindProject
 
         private void Button_Tapped(object sender, TappedRoutedEventArgs e)
         {
-           
+            List<Ellipse> senders = new List<Ellipse>();
+
+            for (int i = 0; i < 4; i++)
+            {
+                senders.Add(new Ellipse
+                {
+                    Fill = ((Ellipse)FindName("turn" + turn + "_" + i)).Fill
+                } );
+            }
+
+            List<Ellipse> results = new List<Ellipse>();
+            for (int i = 0; i < 4; i++)
+            {
+                results.Add(new Ellipse
+                {
+                    Fill = ((Ellipse)FindName("solution" + i)).Fill
+                } );
+            }
         }
 
 
@@ -195,10 +211,9 @@ namespace MastermindProject
             if (row == turn)
             {
                 senderToChange = clicked.Name;
-                StackPanel inputPanel = (StackPanel)FindName("inputPanel");
-                inputPanel.Visibility = Visibility.Visible;
+                StackPanel userInputPanel = (StackPanel)FindName("userInputPanel");
+                userInputPanel.Visibility = Visibility.Visible;
             }
-            // Ellipse elli = FindName("turn" + row + "_" + col) as Ellipse;
         }
 
     }
