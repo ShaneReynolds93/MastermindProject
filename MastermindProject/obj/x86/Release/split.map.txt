@@ -1,0 +1,12 @@
+﻿[ResourceMetadata]
+"ResourceDimensions"		"language-en-us"
+
+[Files]
+"C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\obj\x86\Release\split.pri"			"resources.pri"
+"C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\obj\x86\Release\PackageLayout\WinMetadata\Windows.winmd"			"WinMetadata\Windows.winmd"
+"C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\obj\x86\Release\PackageLayout\Properties\Default.rd.xml"			"Properties\Default.rd.xml"
+"C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\obj\x86\Release\PackageLayout\MastermindProject.xr.xml"			"MastermindProject.xr.xml"
+"C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\obj\x86\Release\PackageLayout\Assets\Store50x50Logo.png"			"Assets\Store50x50Logo.png"
+"C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\obj\x86\Release\PackageLayout\Assets\Square88x88Logo.png"			"Assets\Square88x88Logo.png"
+"C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\obj\x86\Release\PackageLayout\Assets\Square620x620Logo.png"			"Assets\Square620x620Logo.png"
+"C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\obj\x86\Release\PackageLayout\Assets\Splash1240x600Logo.png"			"Assets\Splash1240x600Logo.png"

@@ -9,7 +9,7 @@
     <SolutionConfiguration>Release|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>0d68389d-3371-4964-a61d-603f15c17210</PackageIdentityName>
-    <PackageIdentityPublisher>CN=shayn</PackageIdentityPublisher>
+    <PackageIdentityPublisher>CN=8DFDC8CA-21A6-4AF3-902E-45354C5C7A11</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\obj\x86\Release\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
@@ -22,31 +22,20 @@
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\bin\x86\Release\ilc\Assets\LockScreenLogo.scale-200.png">
-      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\bin\x86\Release\ilc\Assets\SplashScreen.scale-200.png">
-      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\bin\x86\Release\ilc\Assets\Splash1240x600Logo.png">
+      <PackagePath>Assets\Splash1240x600Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-200.png">
-      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\bin\x86\Release\ilc\Assets\Square620x620Logo.png">
+      <PackagePath>Assets\Square620x620Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-200.png">
-      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\bin\x86\Release\ilc\Assets\Square88x88Logo.png">
+      <PackagePath>Assets\Square88x88Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
-      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\bin\x86\Release\ilc\Assets\StoreLogo.png">
-      <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
-      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\bin\x86\Release\ilc\Assets\Store50x50Logo.png">
+      <PackagePath>Assets\Store50x50Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shayn\Documents\Visual Studio 2015\Projects\MastermindProject\MastermindProject\bin\x86\Release\ilc\ClrCompression.dll">

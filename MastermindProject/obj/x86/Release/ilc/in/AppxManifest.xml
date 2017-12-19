@@ -7,12 +7,12 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="0d68389d-3371-4964-a61d-603f15c17210" Publisher="CN=shayn" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <Identity Name="3579ShaneReynolds.MastermindProject" Publisher="CN=8DFDC8CA-21A6-4AF3-902E-45354C5C7A11" Version="1.1.4.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="0d68389d-3371-4964-a61d-603f15c17210" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>MastermindProject</DisplayName>
-    <PublisherDisplayName>shayn</PublisherDisplayName>
-    <Logo>Assets\StoreLogo.png</Logo>
+    <PublisherDisplayName>ShaneReynolds</PublisherDisplayName>
+    <Logo>Assets\Store50x50Logo.png</Logo>
   </Properties>
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10586.0" MaxVersionTested="10.0.14393.0" />
@@ -22,9 +22,15 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="MastermindProject.exe" EntryPoint="MastermindProject.App">
-      <uap:VisualElements DisplayName="MastermindProject" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="MastermindProject" BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
-        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      <uap:VisualElements DisplayName="MastermindProject" Square150x150Logo="Assets\Square300x300.png" Square44x44Logo="Assets\Square88x88Logo.png" Description="MastermindProject" BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide620x300Logo.png" Square310x310Logo="Assets\Square620x620Logo.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+            <uap:ShowOn Tile="wide310x150Logo" />
+            <uap:ShowOn Tile="square310x310Logo" />
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="Assets\Splash1240x600Logo.png" />
       </uap:VisualElements>
     </Application>
   </Applications>
@@ -37,7 +43,7 @@
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2015" />
     <build:Item Name="OperatingSystem" Version="10.0.15063.0 (WinBuild.160101.0800)" />
     <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.25431.1" />
-    <build:Item Name="ProjectGUID" Value="{1d5ac40e-58de-4523-a73d-7a287087d28a}" />
+    <build:Item Name="ProjectGUID" Value="{1D5AC40E-58DE-4523-A73D-7A287087D28A}" />
     <build:Item Name="ilc.exe" Version="1.4.24208.01 built by: PROJECTNGDR2" />
     <build:Item Name="OptimizingToolset" Value="ilc.exe" />
     <build:Item Name="UseDotNetNativeSharedAssemblyFrameworkPackage" Value="True" />

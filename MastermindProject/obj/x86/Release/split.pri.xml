@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="3579ShaneReynolds.MastermindProject" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="App.xbf" uri="ms-resource://3579ShaneReynolds.MastermindProject/Files/App.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MainPage.xbf" uri="ms-resource://3579ShaneReynolds.MastermindProject/Files/MainPage.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MastermindProject.xr.xml" uri="ms-resource://3579ShaneReynolds.MastermindProject/Files/MastermindProject.xr.xml">
+				<Candidate type="Path">
+					<Value>MastermindProject.xr.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="Splash1240x600Logo.png" uri="ms-resource://3579ShaneReynolds.MastermindProject/Files/Assets/Splash1240x600Logo.png">
+					<Candidate type="Path">
+						<Value>Assets\Splash1240x600Logo.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square620x620Logo.png" uri="ms-resource://3579ShaneReynolds.MastermindProject/Files/Assets/Square620x620Logo.png">
+					<Candidate type="Path">
+						<Value>Assets\Square620x620Logo.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square88x88Logo.png" uri="ms-resource://3579ShaneReynolds.MastermindProject/Files/Assets/Square88x88Logo.png">
+					<Candidate type="Path">
+						<Value>Assets\Square88x88Logo.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Store50x50Logo.png" uri="ms-resource://3579ShaneReynolds.MastermindProject/Files/Assets/Store50x50Logo.png">
+					<Candidate type="Path">
+						<Value>Assets\Store50x50Logo.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Properties">
+				<NamedResource name="Default.rd.xml" uri="ms-resource://3579ShaneReynolds.MastermindProject/Files/Properties/Default.rd.xml">
+					<Candidate type="Path">
+						<Value>Properties\Default.rd.xml</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="WinMetadata">
+				<NamedResource name="Windows.winmd" uri="ms-resource://3579ShaneReynolds.MastermindProject/Files/WinMetadata/Windows.winmd">
+					<Candidate type="Path">
+						<Value>WinMetadata\Windows.winmd</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>
